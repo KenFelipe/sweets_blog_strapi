@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pages_licences",
+  "info": {
+    "name": "licence",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

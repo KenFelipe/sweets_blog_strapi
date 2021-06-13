@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "metas",
+  "info": {
+    "name": "Meta"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

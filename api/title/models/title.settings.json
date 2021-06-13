@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "titles",
+  "info": {
+    "name": "title",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "tel": {
+      "type": "string",
+      "required": true
+    },
+    "tel_label": {
+      "type": "string",
+      "required": true
+    },
+    "background_position_x": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "center",
+      "required": true
+    },
+    "background_position_y": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ],
+      "default": "center",
+      "required": true
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "right",
+      "required": true
+    },
+    "background_opacity": {
+      "type": "decimal",
+      "max": 1,
+      "required": true,
+      "min": 0,
+      "default": 0.7
+    },
+    "text_color": {
+      "type": "string",
+      "required": true,
+      "regex": "(?:#|0x)(?:[a-f0-9]{3}|[a-f0-9]{6})\\b|(?:rgb|hsl)a?\\([^\\)]*\\)",
+      "default": "#fff"
+    },
+    "background_layer": {
+      "type": "string",
+      "regex": "(?:#|0x)(?:[a-f0-9]{3}|[a-f0-9]{6})\\b|(?:rgb|hsl)a?\\([^\\)]*\\)",
+      "default": "#000",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "licences",
+  "info": {
+    "name": "licence",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dz": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.licence"
+      ],
+      "required": true
+    }
+  }
+}
